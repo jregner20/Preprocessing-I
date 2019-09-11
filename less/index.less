@@ -53,6 +53,24 @@ table {
     box-sizing: border-box;
 }
 
+//list of variables
+
+@backgroundsilver: silver;
+@MondaFont: 'Monda', sans-serif;
+
+//list of mix-ins
+
+.MixInCenter (){
+	display: flex;
+	justify-content: flex-end;
+}
+
+.MixInFlexbox (){
+	display: flex;
+}
+
+// end of mix-ins
+
 html, body {
     height: 100%;
 }
@@ -62,10 +80,9 @@ html, body {
 }
 
 nav {
-	display: flex;
-	justify-content: flex-end;
+	.MixInCenter ();
 	padding: 2% 0 2% 2%;
-	font-family: 'Monda', sans-serif;
+	font-family: @MondaFont;
 
    a {
 	margin: 1% 0 1% 1%;
@@ -74,7 +91,7 @@ nav {
 
 .me {
 	padding: 3%;
-	background-color: silver;
+	background-color: @backgroundsilver;
 	
 	img {
 		width: 25%;
@@ -85,5 +102,20 @@ nav {
 		font-size: 62.5%;
 		font-size: 4rem;
 	}
+
+	p {
+		padding: 1% 0 1% 0;
+	}
+
+	button {
+		padding: 1%;
+		margin-top: 2%;
+	}
+
+	
 }  // this closes the .me container
+
+.parent-container1 {
+	.MixInFlexbox();
+}
 
