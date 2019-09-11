@@ -156,6 +156,12 @@ nav {
 nav a {
   margin: 1% 0 1% 1%;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+}
 .me {
   padding: 3%;
   background-color: silver;
@@ -167,6 +173,18 @@ nav a {
 .me .NameAbout {
   font-size: 62.5%;
   font-size: 4rem;
+}
+.me .NameAbout h2 {
+  font-size: 62.5%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .me .NameAbout h2 {
+    font-size: 62.5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 .me p {
   padding: 1% 0 1% 0;
