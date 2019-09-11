@@ -134,3 +134,17 @@ html,
 body {
   height: 100%;
 }
+nav {
+  display: flex;
+}
+nav a {
+  justify-content: center;
+}
+.me {
+  padding: 3%;
+  background-color: gray;
+}
+.me img {
+  width: 25%;
+  height: 25%;
+}
