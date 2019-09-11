@@ -135,7 +135,17 @@ body {
   height: 100%;
 }
 .container {
-  margin: 4%;
+  margin: 0 10% 0 10%;
+  width: 65%;
+}
+.container .copyright {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: solid;
+  background-color: black;
+  color: white;
+  height: 50px;
 }
 nav {
   display: flex;
@@ -167,4 +177,25 @@ nav a {
 }
 .parent-container1 {
   display: flex;
+  margin: 3% 0 3% 0;
+}
+.parent-container1 .child-container1 {
+  width: 50%;
+}
+.parent-container1 h2 {
+  font-size: 62.5%;
+  font-size: 1.5rem;
+  padding: 0 0 5% 0;
+  font-weight: bold;
+}
+.parent-container2 h2 {
+  font-size: 62.5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0 1% 0;
+}
+.parent-container2 table {
+  border: 1px solid black;
+  margin: 3% 0 3% 0;
+  width: 100%;
 }

@@ -56,11 +56,18 @@ table {
 //list of variables
 
 @backgroundsilver: silver;
+@backgroundblack: black;
+@whitefont: white;
 @MondaFont: 'Monda', sans-serif;
 
 //list of mix-ins
 
 .MixInCenter (){
+	display: flex;
+	justify-content: center;
+}
+
+.MixInEnd (){
 	display: flex;
 	justify-content: flex-end;
 }
@@ -69,6 +76,10 @@ table {
 	display: flex;
 }
 
+.MixInAlignCenter (){
+	display: flex;
+	align-items: center;
+}
 // end of mix-ins
 
 html, body {
@@ -76,11 +87,20 @@ html, body {
 }
 
 .container {
-	margin: 4%;
+	margin: 0 10% 0 10%;
+	width: 65%;
+	.copyright {
+		.MixInCenter();
+		.MixInAlignCenter;
+		border: solid;
+		background-color: @backgroundblack;
+		color: @whitefont;
+		height: 50px;
+	}
 }
 
 nav {
-	.MixInCenter ();
+	.MixInEnd ();
 	padding: 2% 0 2% 2%;
 	font-family: @MondaFont;
 
@@ -111,11 +131,43 @@ nav {
 		padding: 1%;
 		margin-top: 2%;
 	}
-
 	
 }  // this closes the .me container
 
 .parent-container1 {
 	.MixInFlexbox();
-}
+	margin: 3% 0 3% 0;
 
+	.child-container1 {
+		width: 50%;
+		
+	}
+
+	h2 {
+		font-size: 62.5%;
+		font-size: 1.5rem;
+		padding: 0 0 5% 0;
+		font-weight: bold;
+	}
+
+	.child-container2 {
+		
+	}
+
+} //this closes parent-container1
+
+.parent-container2 {
+	
+	h2 {
+		font-size: 62.5%;
+		font-size: 1.5rem;
+		font-weight: bold;
+		padding: 0 0 1% 0;
+	}
+	
+	table {
+		border: 1px solid black;
+		margin: 3% 0 3% 0;
+		width: 100%;
+	}
+}
