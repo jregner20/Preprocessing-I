@@ -134,14 +134,17 @@ html,
 body {
   height: 100%;
 }
+.container {
+  margin: 4%;
+}
 nav {
   display: flex;
   justify-content: flex-end;
-  padding: 2%;
+  padding: 2% 0 2% 2%;
   font-family: 'Monda', sans-serif;
 }
 nav a {
-  margin: 1%;
+  margin: 1% 0 1% 1%;
 }
 .me {
   padding: 3%;
